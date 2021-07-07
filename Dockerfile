@@ -8,7 +8,7 @@ RUN apt-get install libmysqlclient-dev -y
 RUN apt-get install libssl-dev -y
 
 COPY requirements.txt requirements.txt
-COPY minor-project /opt/
+COPY backend /opt/
 
 RUN pip3 install -r requirements.txt
 
